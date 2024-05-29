@@ -1,6 +1,11 @@
-// Exercise #2: Sum the Numbers
-let numbers = [10, 20, 30, 40, 50];
-let total = 0;
-// Start coding here
-
-console.log(total);
+let productPrices = [10,20,30,40,50];
+let i=0;
+let sum=0;
+while(i<productPrices.length){
+    sum=sum+productPrices[i];
+    i++;
+    if(i===productPrices.length){
+        console.log(sum);
+        break;
+    }
+};

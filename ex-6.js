@@ -1,7 +1,17 @@
-// Exercise #6: Reverse the String
 let companyName = "TechUp Thailand";
-let reversedCompanyName = "";
+let newCompanyName=[];
+let newAlignment;
 
-// Start coding here
+for (let i=0;i<companyName.length;i++){
+    newCompanyName.unshift(companyName[i]);
+};
 
-console.log(reversedCompanyName);
+for(let i=0;i<newCompanyName.length;i++){
+    if(i===0){
+        newAlignment=`${newCompanyName[i]}`;
+    }else {
+        newAlignment=`${newAlignment}${newCompanyName[i]}`;
+    }
+};
+
+console.log(newAlignment);
